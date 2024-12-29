@@ -1,0 +1,255 @@
+:root {
+  font-family: "DM Sans", serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.dm-sans-main {
+  font-family: "DM Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.dm-mono-light {
+  font-family: "DM Mono", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dm-mono-regular {
+  font-family: "DM Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-mono-medium {
+  font-family: "DM Mono", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dm-mono-light-italic {
+  font-family: "DM Mono", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.dm-mono-regular-italic {
+  font-family: "DM Mono", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.dm-mono-medium-italic {
+  font-family: "DM Mono", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+a {
+  font-weight: 500;
+  color: #859D84;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #3B443B;
+}
+
+body {
+  margin: 2% 5%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'DM Mono', serif;
+  color: #EDF4EC;
+  font-size: 100px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: 'DM Mono', serif;
+  font-weight: 400;
+  font-size: 25px;
+  padding: 2px;
+  background: #ffffff;
+  box-shadow: 
+        0 0 5px 5px rgba(255, 255, 255, 1), 
+        0 0 20px 20px rgba(255, 255, 255, 0.6), 
+        0 0 30px 30px rgba(255, 255, 255, 0);  
+}
+
+button, #contactBtn {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #859D84;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover, #contactBtn:hover {
+  border-color: #3B443B;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#resumeBtn {
+  background-color: #859D84;
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #3B443B;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.linkSection {
+  border: 1px solid #CCD8CC;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  line-height: normal;
+}
+
+
+
+.navText {
+  background-color: white;
+  box-shadow: 
+        0 0 5px 5px rgba(255, 255, 255, 1), 
+        0 0 20px 20px rgba(255, 255, 255, 0.6), 
+        0 0 30px 30px rgba(255, 255, 255, 0);  
+  padding: 5px;
+  width: 150px;
+  display: flex;
+  gap: 15px;
+  position: sticky;
+  line-height: 0;
+}
+
+.landingPage {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.landingPageBtns {
+  display: flex;
+  gap: 1em;
+}
+
+.headers {
+  position: relative;
+}
+
+.headers p {
+  z-index: 2;
+  position: absolute; 
+  top: 50px; 
+  left: 80px; 
+  margin: 0; 
+  font-size: 20px;
+}
+.headers h1 {
+  background: #ffffff;
+  z-index: 1;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  margin: 0; 
+}
+
+#skillsHeader {
+  margin-top: 300px;
+}
+#projectsHeader {
+  margin-top: 500px;
+}
+#experienceHeader {
+  margin-top: 900px;
+}
+#contactsHeader {
+  margin-top: 1000px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing;
+  animation-duration: 2s;
+  animation-timing-function: steps(50, end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 390px }
+}
+
+.skillLogo img {
+  margin-top: 400px;
+  display: flex;
+  border-radius: 10px;
+  background-color: #859D84;
+  padding: 10px;
+  width: 100px;
+}
+
+.bgBlock {
+  position: absolute;
+  transform: rotate(-20deg);
+  top: -70%;
+  left: -70%;
+  z-index: -1;
+ 
+}
+
+.bgBlock h4 {
+  line-height: 0px;
+  color: #CCD8CC;
+  font-family: 'DM Mono';
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 0;
+  white-space: pre;
+}
+
+#rectangle {
+  left: -1%;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 200px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 
+        0 0 5px 5px rgba(255, 255, 255, 1), 
+        0 0 40px 40px rgba(255, 255, 255, 0.6), 
+        0 0 60px 60px rgba(255, 255, 255, 0);  
+}
