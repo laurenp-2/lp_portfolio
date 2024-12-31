@@ -59,42 +59,41 @@
 
 a {
   font-weight: 500;
-  color: #859D84;
+  color: #859d84;
   text-decoration: inherit;
 }
 a:hover {
-  color: #3B443B;
+  color: #3b443b;
 }
 
 body {
   margin: 2% 5%;
   min-width: 320px;
   min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
-  font-family: 'DM Mono', serif;
-  color: #EDF4EC;
+  font-family: "DM Mono", serif;
+  color: #edf4ec;
   font-size: 100px;
   line-height: 1.1;
 }
 
 h2 {
-  font-family: 'DM Mono', serif;
+  font-family: "DM Mono", serif;
   font-weight: 400;
   font-size: 25px;
   padding: 2px;
   background: #ffffff;
-  box-shadow: 
-        0 0 5px 5px rgba(255, 255, 255, 1), 
-        0 0 20px 20px rgba(255, 255, 255, 0.6), 
-        0 0 30px 30px rgba(255, 255, 255, 0);  
 }
 
-button, #contactBtn {
+button,
+#contactBtn {
   background-color: white;
   border-radius: 8px;
-  border: 1px solid #859D84;
+  border: 1px solid #859d84;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -102,8 +101,9 @@ button, #contactBtn {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover, #contactBtn:hover {
-  border-color: #3B443B;
+button:hover,
+#contactBtn:hover {
+  border-color: #3b443b;
 }
 button:focus,
 button:focus-visible {
@@ -111,7 +111,7 @@ button:focus-visible {
 }
 
 #resumeBtn {
-  background-color: #859D84;
+  background-color: #859d84;
   color: white;
 }
 
@@ -121,7 +121,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #3B443B;
+    color: #3b443b;
   }
   button {
     background-color: #f9f9f9;
@@ -129,7 +129,7 @@ button:focus-visible {
 }
 
 .linkSection {
-  border: 1px solid #CCD8CC;
+  border: 1px solid #ccd8cc;
   border-radius: 10px;
   padding: 10px;
   background-color: white;
@@ -137,14 +137,13 @@ button:focus-visible {
   line-height: normal;
 }
 
-
-
-.navText {
+.navBar {
   background-color: white;
-  box-shadow: 
-        0 0 5px 5px rgba(255, 255, 255, 1), 
-        0 0 20px 20px rgba(255, 255, 255, 0.6), 
-        0 0 30px 30px rgba(255, 255, 255, 0);  
+  box-shadow: 0 0 45px 45px rgba(255, 255, 255, 1),
+    0 0 60px 60px rgba(255, 255, 255, 0.6), 0 0 60px 60px rgba(255, 255, 255, 0);
+  width: 100%;
+}
+.navText {
   padding: 5px;
   width: 150px;
   display: flex;
@@ -159,31 +158,100 @@ button:focus-visible {
   flex-direction: column;
   align-items: start;
 }
-
 .landingPageBtns {
   display: flex;
   gap: 1em;
 }
 
+#title {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.typed {
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 1),
+    0 0 20px 20px rgba(255, 255, 255, 0.6), 0 0 30px 30px rgba(255, 255, 255, 0);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing;
+  animation-duration: 2s;
+  animation-timing-function: steps(50, end);
+  animation-fill-mode: forwards;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 390px;
+  }
+}
+#cursor {
+  font-weight: 1000;
+  font-size: 30px;
+  color: #859d84;
+  animation: blink 1s infinite;
+  box-shadow: 10 0 5px white;
+  line-height: 25px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.skillCards {
+  display: flex;
+  gap: 2em;
+}
+
+.skillLogo {
+  display: flex;
+  margin-top: 140px;
+  background-color: #859d84;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.skillLogo img {
+  width: 80px;
+  z-index: 200;
+}
+
 .headers {
   position: relative;
 }
-
 .headers p {
   z-index: 2;
-  position: absolute; 
-  top: 50px; 
-  left: 80px; 
-  margin: 0; 
+  position: absolute;
+  top: 50px;
+  left: 80px;
+  margin: 0;
   font-size: 20px;
 }
 .headers h1 {
   background: #ffffff;
   z-index: 1;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  margin: 0; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
 
 #skillsHeader {
@@ -199,42 +267,18 @@ button:focus-visible {
   margin-top: 1000px;
 }
 
-.typed {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing;
-  animation-duration: 2s;
-  animation-timing-function: steps(50, end);
-  animation-fill-mode: forwards;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 390px }
-}
-
-.skillLogo img {
-  margin-top: 400px;
-  display: flex;
-  border-radius: 10px;
-  background-color: #859D84;
-  padding: 10px;
-  width: 100px;
-}
-
 .bgBlock {
   position: absolute;
   transform: rotate(-20deg);
   top: -70%;
   left: -70%;
   z-index: -1;
- 
 }
 
 .bgBlock h4 {
   line-height: 0px;
-  color: #CCD8CC;
-  font-family: 'DM Mono';
+  color: #ccd8cc;
+  font-family: "DM Mono";
   font-size: 12px;
   margin: 0;
   padding: 10px 0;
@@ -245,11 +289,14 @@ button:focus-visible {
   left: -1%;
   height: 100vh;
   width: 100vw;
-  margin-top: 200px;
+  margin-top: 300px;
   position: absolute;
   background-color: white;
-  box-shadow: 
-        0 0 5px 5px rgba(255, 255, 255, 1), 
-        0 0 40px 40px rgba(255, 255, 255, 0.6), 
-        0 0 60px 60px rgba(255, 255, 255, 0);  
+  box-shadow: 0 0 25px 25px rgba(255, 255, 255, 1),
+    0 0 50px 50px rgba(255, 255, 255, 0.6), 0 0 90px 90px rgba(255, 255, 255, 0);
+  z-index: -1;
+}
+
+hr {
+  z-index: 200;
 }
