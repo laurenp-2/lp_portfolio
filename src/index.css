@@ -300,3 +300,18 @@ button:focus-visible {
 hr {
   z-index: 200;
 }
+
+.footer {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  left: -1%;
+  position: absolute;
+  width: 100vw;
+  background-color: #859d84;
+}
+
+.footer a {
+  color: white;
+  white-space: pre;
+}

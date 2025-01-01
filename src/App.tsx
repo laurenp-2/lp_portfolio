@@ -16,6 +16,12 @@ function App() {
       <Projects />
       <Experience />
       <Contact />
+      <div className="footer">
+        <p>Icons by&nbsp;</p>
+        <a href="https://icons8.com/" target="_blank">
+          Icons8
+        </a>
+      </div>
     </>
   );
 }
