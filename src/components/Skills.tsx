@@ -22,6 +22,12 @@ function Skills() {
         <div className="skillLogo">
           <img src="src/assets/icons/express.png" />
         </div>
+        <div className="skillLogo">
+          <img src="src/assets/icons/oop.png" />
+        </div>
+        <div className="skillLogo">
+          <img src="src/assets/icons/ds.png" />
+        </div>
       </div>
     </>
   );
