@@ -89,6 +89,20 @@ h2 {
   background: #ffffff;
 }
 
+h3 {
+  font-family: "DM Mono", serif;
+  width: 120px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 2px;
+  color: #3b443b;
+  background-color: #ccd8cc;
+}
+
+h3:hover {
+  size: 20px;
+}
+
 button,
 #contactBtn {
   background-color: white;
@@ -213,42 +227,25 @@ button:focus-visible {
   }
 }
 
-.skillCards {
-  display: flex;
-  gap: 2em;
-}
-
-.skillLogo {
-  display: flex;
-  margin-top: 140px;
-  background-color: #859d84;
-  padding: 10px;
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  align-items: center;
-  justify-content: center;
-}
-.skillLogo img {
-  width: 80px;
-  z-index: 200;
-}
 
 .headers {
-  position: relative;
+width: 300px;
+ display: grid;
+ grid-template-areas: "overlay";
 }
 .headers p {
-  z-index: 2;
-  position: absolute;
+  grid-area: overlay;
+  position: relative;
+  left: 50px;
   top: 50px;
-  left: 80px;
+  z-index: 2;
   margin: 0;
   font-size: 20px;
 }
 .headers h1 {
+  grid-area: overlay;
   background: #ffffff;
   z-index: 1;
-  position: absolute;
   top: 0;
   left: 0;
   margin: 0;
@@ -314,4 +311,8 @@ hr {
 .footer a {
   color: white;
   white-space: pre;
+}
+
+.skillsInfo {
+  display: flex;
 }

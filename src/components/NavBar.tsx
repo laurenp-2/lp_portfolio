@@ -17,8 +17,6 @@ function NavBar() {
             </p>
             {navLinksVisible && (
             <div className="linkSection">
-                <a href="">Landing Page</a>
-                <br></br>
                 <a href="#skillsHeader">Skills</a>
                 <br></br>
                 <a href="#projectsHeader">Projects</a>

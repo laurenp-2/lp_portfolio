@@ -5,10 +5,10 @@ function Background () {
         return "System.out.print('Hello World!') ".repeat(20); 
     }
     const pythonLine = () => {
-        return " print('hello world!')".repeat(20);
+        return " print('hello world!')".repeat(29);
     }
     const jsLine = () => {
-        return "  console.log('hello world!)".repeat(20); 
+        return "  console.log('hello world!)".repeat(21); 
     }
 
     const BackgroundComponent = () => {
