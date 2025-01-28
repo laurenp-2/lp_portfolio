@@ -89,18 +89,50 @@ h2 {
   background: #ffffff;
 }
 
-h3 {
+.skillsInfo {
+  justify-content: space-between;
+}
+
+.skillsLeft h3 {
+  position: relative;
+  z-index: 9000;
   font-family: "DM Mono", serif;
   width: 120px;
   font-weight: 400;
   font-size: 18px;
   padding: 2px;
   color: #3b443b;
-  background-color: #ccd8cc;
+  transition: all 500ms;
 }
 
-h3:hover {
-  size: 20px;
+.skillsLeft h3:hover {
+  font-size:20px;
+  font-size-adjust: 20px;
+  
+}
+
+.skillsLeft h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #3b443b;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.skillsLeft h3:hover::before {
+  transform: scaleX(1);
+}
+
+.skillsRight {
+  display: flex;
+  padding: 60px;
+  align-items: center;
+  justify-items: center;
 }
 
 button,
@@ -315,4 +347,8 @@ hr {
 
 .skillsInfo {
   display: flex;
+}
+
+img {
+  width: 50px;
 }

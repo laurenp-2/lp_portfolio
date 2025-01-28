@@ -24,46 +24,53 @@ function Skills() {
           <h3 onMouseOver={() => setOCaml(true)} onMouseLeave={() => setOCaml(false)}>OCaml</h3>
           <h3 onMouseOver={() => setMl(true)} onMouseLeave={() => setMl(false)}>Machine learning</h3>
         </div>
-        <div className="skillBlurb">
+        <div className="skillsRight">
           <div id="javaBlurb">
             {java && (
               <>
-              <h1>java showing</h1>
+              <img src="src/assets/icons/java.png"/>
+              <p>I have been programming in Java for four years. </p>
               </>
             )}
           </div>
           <div id="reactBlurb">
             {react && (
               <>
-              <h1>react showing</h1>
+              <img src="src/assets/icons/react.svg"/>
+              <p>I have been creating in React.js for the past year—this has become my preferred framework 
+                for front-end development due to its flexibility and versatility. Some projects I have used
+                React in are SavorStats, _____, and this website!  </p>
               </>
             )}
           </div>
           <div id="expressBlurb">
           {express && (
               <>
-              <h1>express showing</h1>
+              <img src="src/assets/icons/express.png"/>
+              <p>express showing</p>
               </>
             )}
           </div>
           <div id="htmlBlurb">
           {html && (
               <>
-              <h1>html showing</h1>
+              <img src="src/assets/icons/web.png"/>
+              <p>html showing</p>
               </>
             )}
           </div>
           <div id="OCamlBlurb">
           {OCaml && (
               <>
-              <h1>ocaml showing</h1>
+              <p>ocaml showing</p>
               </>
             )}
           </div>
           <div id="MLBlurb">
           {ml && (
               <>
-              <h1>ml showing</h1>
+              <img src="src/assets/icons/ml.png"/>
+              <p>ml showing</p>
               </>
             )}
           </div>
