@@ -7,6 +7,62 @@ function Skills() {
   const[html, setHtml] = useState(false); 
   const[OCaml, setOCaml] = useState(false); 
   const[ml, setMl] = useState(false); 
+  const[none, setNone] = useState(true); 
+
+  const showJava = () => {
+    setJava(true); 
+    setNone(false); 
+  }
+  const hideJava = () => {
+    setJava(false); 
+    setNone(true); 
+  }
+
+  const showReact = () => {
+    setReact(true); 
+    setNone(false); 
+  }
+  const hideReact = () => {
+    setReact(false); 
+    setNone(true); 
+  }
+
+  const showExpress = () => {
+    setExpress(true); 
+    setNone(false); 
+  }
+  const hideExpress = () => {
+    setExpress(false); 
+    setNone(true); 
+  }
+
+  const showHtml = () => {
+    setHtml(true); 
+    setNone(false); 
+  }
+  const hideHtml = () => {
+    setHtml(false); 
+    setNone(true); 
+  }
+
+  const showOCaml = () => {
+    setOCaml(true); 
+    setNone(false); 
+  }
+  const hideOCaml = () => {
+    setOCaml(false); 
+    setNone(true); 
+  }
+
+  const showMl = () => {
+    setMl(true); 
+    setNone(false); 
+  }
+  const hideMl = () => {
+    setMl(false); 
+    setNone(true); 
+  }
+
 
   return (
     <>
@@ -17,14 +73,25 @@ function Skills() {
       </div>
       <div className="skillsInfo">
         <div className="skillsLeft"> 
-          <h3 onMouseOver={() => setJava(true)} onMouseLeave={() => setJava(false)}>Java</h3>
-          <h3 onMouseOver={() => setReact(true)} onMouseLeave={() => setReact(false)}>React.js</h3>
-          <h3 onMouseOver={() => setExpress(true)} onMouseLeave={() => setExpress(false)}>Express.js</h3>
-          <h3 onMouseOver={() => setHtml(true)} onMouseLeave={() => setHtml(false)}>HTML & CSS</h3>
-          <h3 onMouseOver={() => setOCaml(true)} onMouseLeave={() => setOCaml(false)}>OCaml</h3>
-          <h3 onMouseOver={() => setMl(true)} onMouseLeave={() => setMl(false)}>Machine learning</h3>
+          <h3 onMouseOver={showJava} onMouseLeave={hideJava}>Java</h3>
+          <h3 onMouseOver={showReact} onMouseLeave={hideReact}>React.js</h3>
+          <h3 onMouseOver={showExpress} onMouseLeave={hideExpress}>Express.js</h3>
+          <h3 onMouseOver={showHtml} onMouseLeave={hideHtml}>HTML & CSS</h3>
+          <h3 onMouseOver={showOCaml} onMouseLeave={hideOCaml}>OCaml</h3>
+          <h3 onMouseOver={showMl} onMouseLeave={hideMl}>Machine learning</h3>
         </div>
         <div className="skillsRight">
+          <div id="defaultBlurb">
+            {none && (
+              <>
+              <img src="src/assets/icons/default.png"/>
+              <p>I am always striving to develop and expand my skill set. Through classes, projects, and even just supplementary learning, I 
+                am always learning more technical skills. Hover over any of the languages to the left to read about my experience with this skill, and 
+                how I apply it!
+              </p>
+              </>
+            )}
+          </div>
           <div id="javaBlurb">
             {java && (
               <>
