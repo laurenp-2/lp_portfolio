@@ -32,7 +32,7 @@ function NavBar() {
             </p>
             {socialsVisible && (
             <div className="linkSection">
-                <a href="www.linkedin.com/in/lauren-pothuru" target="_blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/lauren-pothuru/" target="_blank">LinkedIn</a>
                 <br></br>
                 <a href="https://github.com/laurenp-2" target="_blank">GitHub</a>
             </div>

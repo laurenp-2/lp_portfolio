@@ -272,7 +272,7 @@ width: 300px;
 .headers p {
   grid-area: overlay;
   position: relative;
-  left: 50px;
+  left: 100px;
   top: 50px;
   z-index: 2;
   margin: 0;
@@ -291,13 +291,7 @@ width: 300px;
   margin-top: 300px;
 }
 #projectsHeader {
-  margin-top: 100px;
-}
-#experienceHeader {
-  margin-top: 300px;
-}
-#contactsHeader {
-  margin-top: 600px;
+  margin-top: 50px;
 }
 
 .bgBlock {
@@ -320,7 +314,7 @@ width: 300px;
 
 #rectangle {
   left: -1%;
-  height: 150vh;
+  height: 140vh;
   width: 100vw;
   margin-top: 300px;
   position: absolute;
@@ -359,19 +353,76 @@ hr {
   width: 30px;
 }
 
-
-
-img {
-  width: 400px;
+.guiProject img {
+  height: 30%;
+  width: 30%;
+  min-height: 300px;
+  min-width: 300px;
+  border: 1px solid #859d84;
+  border-radius: 5px;
 }
 
-.guiProject {
+.guiProject, .ssProject {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 25px;
   gap: 20px;
 }
 
+.ssProject {
+  flex-wrap: wrap-reverse;
+  margin-top: 80px;
+}
+
 #guiTitle {
-  transform: rotate(-90deg);
+  writing-mode: sideways-lr;
   background: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.projectSkills {
+  display: flex;
+  gap: 20px;
+}
+
+.projectDescription  {
+  margin-left: 20px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 40%;
+}
+
+p {
+  text-align: left;
+}
+
+.projectSkills h4 {
+  font-family: "DM Mono", serif;
+  color: white;
+  background-color: #859d84;
+  border-radius: 5px;
+  padding: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.ssProject img {
+  width: 500px;
+  border: 1px solid #859d84;
+  border-radius: 5px;
+}
+
+#ssTitle {
+  writing-mode: sideways-rl;
+  background: none;
+  padding: 0px;
+  margin: 0px;
+}
+.ssRight {
+  display: flex;
+  flex-wrap: nowrap;
 }
