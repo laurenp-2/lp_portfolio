@@ -289,6 +289,8 @@ width: 300px;
 
 #skillsHeader {
   margin-top: 300px;
+  text-align: start;
+  width: 500px;
 }
 #projectsHeader {
   margin-top: 50px;
@@ -425,4 +427,53 @@ p {
 .ssRight {
   display: flex;
   flex-wrap: nowrap;
+}
+
+#contactsHeader {
+  font-size: 40px;
+  margin: 20px;
+  margin-top: 100px;
+  display: flex;
+  align-items: start;
+}
+
+#connectForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  margin: 20px;
+}
+
+textarea {
+  font-family: "DM Mono", serif;
+  width: 400px;
+  height: 300px;
+  resize: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 400px;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-bottom: 10px;
+}
+
+.formButtons {
+  display: flex;
+  gap: 20px;
+  width: 400px;
+}
+
+.formButtons #contactBtn {
+  color: #859d84;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+.formButtons #contactBtn:hover {
+  background-color: #859d84;
+  color: white; 
+  border: none;
 }

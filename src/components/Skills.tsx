@@ -69,7 +69,7 @@ function Skills() {
       <div id="rectangle"></div>
       <div className="headers" id="skillsHeader">
         <h1>skills</h1>
-        <p>skills text thing goes here</p>
+        <p>Turning knowledge into innovative solutions</p>
       </div>
       <div className="skillsInfo">
         <div className="skillsLeft"> 
@@ -129,6 +129,7 @@ function Skills() {
           <div id="OCamlBlurb">
           {OCaml && (
               <>
+              <img src="src/assets/icons/ocaml.png"/>
               <p>ocaml showing</p>
               </>
             )}

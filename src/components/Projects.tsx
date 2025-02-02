@@ -4,7 +4,7 @@ function Projects () {
     <>
     <div className="headers" id="projectsHeader">
         <h1>projects</h1>
-        <p>projects text thing goes here</p>
+        <p>Always committed to delivering high-quality code</p>
     </div>
     
     <div className="guiProject">
@@ -17,7 +17,7 @@ function Projects () {
                 photo based on the contours of the image. This is implemented using Djikstra's shortest paths algorithm, and works for color or grayscale images.
                 Users are also able to save their cropped image to a directory of their choosing. 
                 <br/><br/>This GUI applet was entirely created with Java; unfortunately, as it was created as a class project, its code is not accessible for public 
-                use. However, you may try it out here!
+                use.
             </p>
             <div className="projectSkills">
                 <h4>Java</h4>
