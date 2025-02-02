@@ -106,9 +106,8 @@ h2 {
 }
 
 .skillsLeft h3:hover {
-  font-size:20px;
+  font-size: 20px;
   font-size-adjust: 20px;
-  
 }
 
 .skillsLeft h3::before {
@@ -263,11 +262,10 @@ button:focus-visible {
   }
 }
 
-
 .headers {
-width: 300px;
- display: grid;
- grid-template-areas: "overlay";
+  width: 300px;
+  display: grid;
+  grid-template-areas: "overlay";
 }
 .headers p {
   grid-area: overlay;
@@ -364,7 +362,8 @@ hr {
   border-radius: 5px;
 }
 
-.guiProject, .ssProject {
+.guiProject,
+.ssProject {
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -388,7 +387,7 @@ hr {
   gap: 20px;
 }
 
-.projectDescription  {
+.projectDescription {
   margin-left: 20px;
   display: flex;
   width: 50%;
@@ -474,6 +473,6 @@ input {
 }
 .formButtons #contactBtn:hover {
   background-color: #859d84;
-  color: white; 
+  color: white;
   border: none;
 }

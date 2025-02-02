@@ -24,8 +24,12 @@ function App() {
           </a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/lauren-pothuru/" target="_blank"><img src="src/assets/icons/linkedin.png"/></a>
-          <a href="https://github.com/laurenp-2" target="_blank"><img src="src/assets/icons/github.png"/></a>
+          <a href="https://www.linkedin.com/in/lauren-pothuru/" target="_blank">
+            <img src="src/assets/icons/linkedin.png" />
+          </a>
+          <a href="https://github.com/laurenp-2" target="_blank">
+            <img src="src/assets/icons/github.png" />
+          </a>
         </div>
       </div>
     </>
